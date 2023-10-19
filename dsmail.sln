@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1706.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DsMail", "DsMail\DsMail.csproj", "{1461C920-F7AC-478A-90FA-897D5E5301A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib", "lib\lib.csproj", "{9A05EEF6-E450-4A09-B6B6-F83F8832391B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dscon", "dscon\dscon.csproj", "{AEFF9D23-E87D-48FA-BEEB-CC60E99B065E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1461C920-F7AC-478A-90FA-897D5E5301A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1461C920-F7AC-478A-90FA-897D5E5301A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1461C920-F7AC-478A-90FA-897D5E5301A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1461C920-F7AC-478A-90FA-897D5E5301A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A05EEF6-E450-4A09-B6B6-F83F8832391B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A05EEF6-E450-4A09-B6B6-F83F8832391B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A05EEF6-E450-4A09-B6B6-F83F8832391B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A05EEF6-E450-4A09-B6B6-F83F8832391B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEFF9D23-E87D-48FA-BEEB-CC60E99B065E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEFF9D23-E87D-48FA-BEEB-CC60E99B065E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEFF9D23-E87D-48FA-BEEB-CC60E99B065E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEFF9D23-E87D-48FA-BEEB-CC60E99B065E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
