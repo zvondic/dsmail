@@ -1,0 +1,19 @@
+﻿{
+  "Pop3": {
+    "Period": 2000,
+    "StopOnEnd": true,
+    "Items": [
+      {
+        "Server": "dasta.mojedata.cz",
+        "Port": 995,
+        "UserName": "test@mojedata.cz",
+        "Passwd": "Nl3.cb!",
+        "Path": "/Users/zvoj/Applications/MojeData",
+        "Timeout": 30000,
+        "Count": 200
+      }
+    ]
+  }
+}           
+
+ 

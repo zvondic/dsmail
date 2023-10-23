@@ -6,6 +6,7 @@ using System.Timers;
 using System.Threading;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Object = System.Object;
+using Serilog.Sinks.SystemConsole.Themes;
 
 namespace DSmail
 {
@@ -13,7 +14,7 @@ namespace DSmail
     {
         static void Main(string[] args)
         {
-            Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
+            Log.Logger = new LoggerConfiguration().WriteTo.Console(theme: AnsiConsoleTheme.Sixteen).CreateLogger();
             Log.Logger.Information("DSmail strated");
             string settingFn = Path.Combine(Environment.CurrentDirectory,"appconfig.json");
             Log.Logger.Information(settingFn);
@@ -23,8 +24,9 @@ namespace DSmail
             if ( config != null && config.Pop3 !=null)
             {
                 DSmail.Api.ReceiveMessages(config.Pop3.Items);
+                if (config.Pop3.StopOnEnd) Console.ReadKey();
             }
-            Console.ReadKey();
+
         }
 
     }

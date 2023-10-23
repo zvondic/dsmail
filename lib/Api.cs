@@ -49,7 +49,7 @@ namespace DSmail
                                 foreach (var attachment in msg.FindAllAttachments())
                                 {
                                     string filePath = Path.Combine(item.Path, attachment.FileName);
-                                    Log.Information("Saving " + filePath);
+                                    Log.Information("Saving " +(count-i+1).ToString()+": "+ filePath);
                                     FileStream Stream = new FileStream(filePath, FileMode.Create);
                                     BinaryWriter BinaryStream = new BinaryWriter(Stream);
                                     BinaryStream.Write(attachment.Body);

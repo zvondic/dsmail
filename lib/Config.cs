@@ -10,6 +10,7 @@ namespace DSmail
 
     public class Pop3
     {
+        public bool StopOnEnd { get; set; }
         public int Period { get; set; }
         public Item[]? Items {get; set; }
         public void Pop3TimerCallback(System.Object o)
